@@ -1,7 +1,7 @@
 import "./ToDoItem.css"
 import delete_icon from '../../images/delete_icon.jpg'
 
-function ToDoItem({ id, title, deadline }) {
+function ToDoItem({ id, title, deadline, onDelete }) {
     return(
         <div className="todo" key={id}>
             <div className="align_left">
@@ -18,7 +18,7 @@ function ToDoItem({ id, title, deadline }) {
                     </div>
                 </div>
                 <div className="column">
-                    <div className="delete_icon">
+                    <div className="delete_icon" onClick={onDelete}>
                         <img src={delete_icon} alt="delete"/>
                     </div>
                 </div>
