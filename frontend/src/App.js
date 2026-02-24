@@ -5,19 +5,12 @@ import ToDoList from './components/toDoList/ToDoList.jsx';
 import ToDoForm from './components/toDoForm/ToDoForm.jsx';
 
 function App() {
-  const [todos, setToDoList] = useState([
-  {
-    id: 1,
-    title: "Hello",
-    deadline: "02/26/2026",
-    completed: false
-  },
-  {
-    id: 2,
-    title: "test",
-    deadline: "02/22/2026",
-    completed:false
-  }]);
+  const [todos, setToDoList] = useState([]);
+  useEffect(() => {
+    fetch('http://localhost:3000/api/todos')
+    .then(res => res.json())
+    .then(data => setToDoList(data))
+  }, []);
 
   const addToDo = (todo) => {
     setToDoList((prev) => {
