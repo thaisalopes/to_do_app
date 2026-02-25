@@ -15,7 +15,7 @@ Follow the steps below to run the application locally.
 ---
 
 1. Clone the git repository
-2. Open the project folder (TO_DO_APP) on VSCode
+2. Open the project folder (to_do_app) on VSCode
 
 3. Run the Back End (Node / Express):
 
