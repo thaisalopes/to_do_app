@@ -2,37 +2,31 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Poppins", sans-serif;
+  color: rgb(101, 122, 95);
+  margin: 0;
+  background-color: rgb(233, 214, 227);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todoList h1 {
+  font-family: "League Script", cursive;
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(200, 77, 118);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todoForm {
+  padding: 26px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 15px;
+  font-style: italic;
+}
+
+.container {
+  margin: 40px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: flex-start;
+  gap: 120px;
 }

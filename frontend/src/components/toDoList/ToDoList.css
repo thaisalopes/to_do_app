@@ -1,0 +1,29 @@
+h1 {
+  justify-self: center;
+  margin: 20px;
+}
+
+p {
+  margin-top: 60px;
+  text-align: center;
+  font-weight: 400;
+  color: rgb(101, 122, 95);
+}
+
+.todoList {
+  width: 430px;
+  min-height: 500px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.35),
+    rgba(217, 0, 255, 0.18)
+  );
+  border-radius: 30px;
+  padding: 20px;
+  border-style: dotted;
+}
+
+.todoForm {
+  padding: 26px;
+  margin-top: 70px;
+}
